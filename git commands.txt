@@ -1,0 +1,207 @@
+token---->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
+
+git config --global user.name----> kullanici adi.
+git config --global credential.helper cache--->giris bilgilerini saklamak icnin kullanilir.
+git init ---> working space  olusturur.
+git add ----> projemizi working spaceden staged areaya yollar.
+git status----> working and staging areadaki dosyalarin durumunu kontrol eder.
+git commit-----> staging areadan git repositoriye yollar.
+git log---->detayli bakis.
+git log -p---->daha detayli bilgi.
+git shaw hash kodun ilk 7 hanesi -----> hash kodu hakkinda detayli bilgi verir.
+git mv eski dosya ismi yeni dosya ismi ---> isim degistirmek.
+git checkout hash code ---> baska commite gecis yapar.
+git branch ---> hangi branchte oldugumuzu gosterir.
+git branch branch ismi ----> branch olusturma.
+git checkout -b branch ismi---> branch olustur ve direk onu switch et.
+git branch -d branch ismi --> branch silmek icin kullanilir
+git branch -n yeni isim --> branch ismi degistirme.
+git merge branch ismi --> branchleri birlestirme.
+git remote  add origin link --> lokaldeki dosyalari remote yollar
+sonra git push --set-upstream origin master --> lokaldeki dosyalari remote yollar
+git clone link-->
+git remote -v -->
+--------------------------------------------------------------------------------------------
+BAHS KOMUTLAR
+
+declare -i num=sayi ---> int tanimlama.
+----------------------------------------------------------------------------------------------------------------------------------
+arr1=( Bash Python c#)-----> string diziler kullanimi.
+declare -a arr2=(html css javascript)----> int diziler kullanimi.
+echo ${arr1[1]}------------>
+----------------------------------------------------------------------------------------------------------------------------------
+declare -A arr4=( [framework]=laravel [cms]=wordpress [library]=jquerry )---> dictionary kullanimi.
+echo ${arr4[*]} ---> butun value degerlerine ulasir.
+echo ${arr4[@]} ===> butun key degerlerine ulasir.
+----------------------------------------------------------------------------------------------------------------------------------
+		WHILE LOOP KULLANIMI.
+read -p "sayi giriniz: " sayi
+
+while [ $sayi -gt 0 ]
+do
+    sqr=$((sayi*sayi))
+    echo "The square of $sayi is $sqr"
+    ((sayi--))
+done
+----------------------------------------------------------------------------------------------------------------------------------
+		UNTIL LOOP KULLANIMI
+read -p "sayi giriniz: " sayi
+
+until [ $sayi -le 0 ]
+do
+    kare=$((sayi*sayi))
+    echo "$sayi nin karesi $kare dir"
+    ((sayi--))
+done
+----------------------------------------------------------------------------------------------------------------------------------
+		MATEMATIKSEL ISLEMLER
+d=$( expr 10 \* 10 )
+echo $d
+
+e=$(($a+$b))
+echo $e
+----------------------------------------------------------------------------------------------------------------------------------
+		SART BLOGUNU DEGISKENE ATAMA
+
+#!/bin/bash
+
+file="ifs.sh"
+
+deg=$(if [ -f "$file" ]
+  then
+    echo "Var"
+else
+    echo "yok"
+fi)
+
+echo $deg
+----------------------------------------------------------------------------------------------------------------------------------
+		BREAK=CONTINUE KULLANIMI
+
+#!/bin/bash
+
+i=0
+
+while [ $i -le 10 ]
+do
+    (( i++ ))
+    if [ $i -ge 6 ]
+      then
+        continue;
+    fi
+    if [ $i -eq 8 ]
+      then
+        break;
+    fi
+    echo "i mizin anlik degeri $i dir"
+done
+
+echo "simdi i mizin degeri $i dir"
+----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
